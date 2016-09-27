@@ -1,0 +1,26 @@
+<view class="page">
+    <view class="page__hd">
+
+        <text class="page__title">豆瓣图书</text>
+        <img src="../pics/douban.png"></img>
+    </view>
+    <form class="page__bd" >
+
+       <view>
+            <view class = "rating">{{rating}}</view>
+            <view class = 'author'>{{author}}</view>
+            <view>{{author_intro}}</view>
+            <image src = "{{src}}" class = "book"></image>
+            <view>{{summary}}</view>
+       </view>
+        
+        <view class="section">
+            <input name="host" placeholder="请输入书名" auto-focus value="{{bookname}}" bindchange="search"  />
+        </view>
+
+       
+        <view class="btn-area">
+            <button formType="submit">查询</button>
+        </view>
+    </form>
+</view>
